@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: MyString
+  end_time: MyString
+  rate: MyString
+  tag: MyString
+  user_id: MyString
+  project_id: MyString
+
+two:
+  start_time: MyString
+  end_time: MyString
+  rate: MyString
+  tag: MyString
+  user_id: MyString
+  project_id: MyString
