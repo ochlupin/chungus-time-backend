@@ -1,14 +1,15 @@
 class Api::V1::UsersController < ApplicationController
     def index
+        render json: User.all
     end
 
     def show
+        render json: User.find(params[:id])
     end
 
     def create
         @user = User.new(user_params)
         if @user.save
-            
     end
 
     def edit
@@ -25,4 +26,5 @@ class Api::V1::UsersController < ApplicationController
     def user_params
         params.require(:user).permit(:username,:email,:password)
     end
+end
 end
