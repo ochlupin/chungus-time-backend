@@ -9,7 +9,7 @@ class Api::V1::TimersController < ApplicationController
     end
 
     def create
-        @timer = Timer.new(timer_params)
+        @timer = Timer.create(title: timer_params[:title], seconds: timer_params[:seconds])
     end
 
     def edit

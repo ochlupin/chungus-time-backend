@@ -8,8 +8,8 @@ class Api::V1::ProjectsController < ApplicationController
     end
 
     def create
-        @project = Project.new(project_params)
-        
+        @project = Project.create(title: project_params[:title])
+
     end
 
     def edit
