@@ -22,10 +22,10 @@ ActiveRecord::Schema.define(version: 2019_01_11_181229) do
   end
 
   create_table "timers", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "title"
     t.string "seconds"
-    t.integer "user_id", null: false
-    t.integer "project_id", null: false
+    t.integer "user_id"
+    t.integer "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["project_id"], name: "index_timers_on_project_id"
