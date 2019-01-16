@@ -9,6 +9,7 @@ class Api::V1::ProjectsController < ApplicationController
 
     def create
         @project = Project.create(title: project_params[:title])
+        render json: @project
 
     end
 

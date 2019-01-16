@@ -10,6 +10,7 @@ class Api::V1::TimersController < ApplicationController
 
     def create
         @timer = Timer.create(title: timer_params[:title], seconds: timer_params[:seconds])
+        render json: @timer
     end
 
     def edit
