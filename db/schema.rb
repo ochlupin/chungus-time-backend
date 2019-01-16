@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2019_01_11_181229) do
 
   create_table "timers", force: :cascade do |t|
     t.string "title", null: false
-    t.integer "seconds"
+    t.string "seconds"
     t.integer "user_id", null: false
     t.integer "project_id", null: false
     t.datetime "created_at", null: false
