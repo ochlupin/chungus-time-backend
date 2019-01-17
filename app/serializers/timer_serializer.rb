@@ -1,4 +1,4 @@
 class TimerSerializer < ActiveModel::Serializer
-  attributes :id,:seconds,:title,:created_at,:updated_at
+  attributes :id,:seconds,:title
   belongs_to :project
 end
