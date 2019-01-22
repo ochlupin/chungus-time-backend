@@ -7,6 +7,7 @@ class Api::V1::ProjectsController < ApplicationController
         render json: Project.find(params[:id])
     end
 
+    # TODO - ADD FIND BY METHOD
     def create
         @project = Project.create(title: project_params[:title])
         render json: @project
@@ -20,11 +21,13 @@ class Api::V1::ProjectsController < ApplicationController
     end
 
     def destroy
+        @project = Project.find(params[:id])
+        @project.destroy
     end
 
     private
 
     def project_params
-        params.require(:project).permit(:title)
+        params.require(:project).permit(:id,:title)
     end
 end
