@@ -29,7 +29,7 @@ class Api::V1::TimersController < ApplicationController
     private
 
     def timer_params
-        params.require(:timer).permit(:id, :title,:seconds,:user_id,:project_id)
+        params.require(:timer).permit(:id, :title,:seconds,:user_id,:project_id,project:[:title])
     end
 
 
