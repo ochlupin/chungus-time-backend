@@ -18,6 +18,7 @@ Project.create!(title: "Backend")
 Project.create!(title: "Job Search")
 Project.create!(title: "Styling")
 Project.create!(title: "Real Life")
+Project.create!(title: "Stretch Goals")
 
 # Timers for phong
 Timer.create!(title: "Create Routes",seconds:"3400",project_id:1,user_id:1)
