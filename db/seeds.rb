@@ -40,7 +40,13 @@ Timer.create!(title: "Coffee with Ali",seconds:"7200",project_id:5,user_id:1)
 Timer.create!(title: "Chungus with Alex",seconds:"7200",project_id:5,user_id:1)
 
 #timers for ali
+Timer.create!(title: "Spitting fire",seconds:"7200",project_id:5,user_id:2)
+Timer.create!(title: "Spitting fire",seconds:"7200",project_id:5,user_id:2)
 
 #timers  for yoan
+Timer.create!(title: "Creating more models",seconds:"7200",project_id:2,user_id:3)
+Timer.create!(title: "Trimming the redux tree",seconds:"7200",project_id:1,user_id:3)
 
 #timers for alex
+Timer.create!(title: "Spinning out of control",seconds:"10000",project_id:5,user_id:4)
+Timer.create!(title: "Evolving into full chungus",seconds:"10000",project_id:5,user_id:4)
